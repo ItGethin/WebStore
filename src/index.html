@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>邦购</title>
+
+    <!-- Bootstrap -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../node_modules/respond/main.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container myHeader">
+        <p>欢迎来到邦购网，全场满199元包邮</p>
+        <ul class="header_nav">
+            <li class="login">
+                <div class="No-user" >
+                    <a href="#" onclick="go_login()">登录</a>
+                    <div class="loginBox">
+                        <a href="#">QQ账户登录</a>
+                        <a href="#">支付宝登录</a>
+                        <a href="#">微信账户登录</a>
+                    </div>
+                </div>
+                <div class="have-user" style="display: none">
+                    <span class="userName">localhost</span>
+                    <a href="#" class="tuichu">[退出]</a>
+                </div>
+            </li>
+            <li><a href="#" onclick="go_register()">注册</a></li>
+            <li class="myBw">
+                <a href="#">我的邦购</a>
+                <div class="myBwBox">
+                    <a href="#">我的订单</a>
+                    <a href="#">我的积分</a>
+                    <a href="#">我的点赞</a>
+                    <a href="#">收货地址</a>
+                </div>
+            </li>
+            <li><a href="#">会员中心</a></li>
+            <li class="download">
+                <a href="#">下载APP</a>
+                <div class="ewm">
+                    <img src="images/mbshop_pic_erweima.jpg" alt="">
+                </div>
+            </li>
+            <li><a href="#">微博&nbsp; 微信</a></li>
+        </ul>
+    </div>
+</header>
+
+<!--头部-->
+<section class="top">
+    <div class="container myTop">
+        <div class="logo"></div>
+        <div class="top_mid">
+            <div class="top_search">
+                <input type="text" class="s1" placeholder="2000+精选好货本期新到→"/><input type="button" value="搜索" class="s2"/>
+            </div>
+            <div class="top_searchKey">
+                <a href="#">夏尚新</a>
+                <a href="#">衬衫</a>
+                <a href="#">夹克</a>
+                <a href="#">休闲裤</a>
+                <a href="#">每满179减60</a>
+            </div>
+        </div>
+        <div class="top_right">
+            <a>购物袋 <span>0</span>件</a>
+        </div>
+    </div>
+
+</section>
+
+<nav>
+    <div class="container myNav">
+        <ul class="clearfix">
+            <li>
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                <span>商品分类</span>
+            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">潮品牌</a></li>
+            <li><a href="#">运动馆</a></li>
+            <li><a href="#">领券中心</a></li>
+            <li><a href="#">新客专享</a></li>
+            <li><a href="#">断码零利</a></li>
+            <li class="pull-right"><img src="images/mobilegai.gif" alt=""></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<section class="banner-wrap">
+    <div class="container banner">
+        <div class="banner_list">
+            <ul>
+                <li>
+                    <dl>
+                        <dt><a href="#">热销分类</a></dt>
+                        <dd>
+
+                            <a href="#">衬衫</a>
+                            <a href="#" class="my-a-class">夹克</a>
+                            <a href="#" class="my-a-class">休闲长裤</a>
+                            <a href="#">牛仔长裤</a>
+                            <a href="#">短袖T恤</a>
+                            <a href="#">卫衣</a>
+                            <a href="#">毛衫</a>
+                            <a href="#">休闲鞋</a>
+                            <a href="#">双肩包</a>
+
+                        </dd>
+                    </dl>
+                    <div class="banner_hover">
+                        <div class="left_show">
+                            <dl>
+                                <dt>男生热门</dt>
+                                <dd>
+                                    <a href="#">春新品</a>
+                                    <a href="#">新品夹克</a>
+                                    <a href="#">军装夹克</a>
+                                    <a href="#">衬衫</a>
+                                    <a href="#">慢跑裤</a>
+                                    <a href="#"> 百搭休闲裤</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>女生热门</dt>
+                                <dd>
+                                    <a href="#">春新品</a>
+                                    <a href="#">商场同款</a>
+                                    <a href="#">风衣</a>
+                                    <a href="#">夹克</a>
+                                    <a href="#">裙装</a>
+                                    <a href="#">背带裙/背带裤</a>
+                                    <a href="#">阔腿裤</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>儿童热门</dt>
+                                <dd>
+                                    <a href="#">春新品</a>
+                                    <a href="#">套装</a>
+                                    <a href="#">外套</a>
+                                    <a href="#">裤子</a>
+                                    <a href="#">毛衣</a>
+                                    <a href="#">卫衣</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>生活热门</dt>
+                                <dd>
+                                    <a href="#">随行杯</a>
+                                    <a href="#">取暖小件</a>
+                                    <a href="#">创意礼品</a>
+                                    <a href="#">面膜</a>
+                                    <a href="#">护肤套装</a>
+                                    <a href="#"> 礼盒</a>
+                                    <a href="#">家居鞋/拖鞋</a>
+                                    <a href="#">披毯/盖毯</a>
+                                    <a href="#">保温杯</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="right_show">
+                            <div class="right_img">
+                                <img src="images/pc_fldh1.jpg" alt="">
+                            </div>
+                            <div class="right_text">
+                                <p>当季流行热门品牌</p>
+                                <div class="logos">
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                    <a href="#"><img src="images/mecity.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--箭头-->
+                        <span class="jiantou"></span>
+                    </div>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">男装</a></dt>
+                        <dd>
+                            <a href="#" class="my-a-class">夹克</a>
+                            <a href="#">休闲长裤</a>
+                            <a href="#">长袖衬衫</a>
+                            <a href="#">T恤</a>
+                            <a href="#" class="my-a-class">牛仔长裤</a>
+                            <a href="#">卫衣</a>
+                            <a href="#">西装</a>
+                            <a href="#">毛衫</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">女装</a></dt>
+                        <dd>
+                            <a href="#">连衣裙</a>
+                            <a href="#" class="my-a-class">大衣/风衣</a>
+                            <a href="#">夹克</a>
+                            <a href="#" class="my-a-class">牛仔长裤</a>
+                            <a href="#" class="my-a-class">长袖衬衫</a>
+                            <a href="#">毛衫</a>
+                            <a href="#"> T恤</a>
+                            <a href="#" class="my-a-class">休闲长裤</a>
+
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">儿童</a></dt>
+                        <dd>
+
+                            <a href="#">衬衫</a>
+                            <a href="#" class="my-a-class">牛仔长裤</a>
+                            <a href="#">套头毛衣</a>
+                            <a href="#">夹克 </a>
+                            <a href="#">针织裤</a>
+                            <a href="#">卫衣</a>
+                            <a href="#">童鞋</a>
+                            <a href="#">童包配</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">鞋履</a></dt>
+                        <dd>
+
+                            <a href="#">休闲鞋</a>
+                            <a href="#">跑步鞋</a>
+                            <a href="#">帆布鞋</a>
+                            <a href="#">时装鞋</a>
+                            <a href="#">篮球鞋</a>
+                            <a href="#" class="my-a-class">运动鞋</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">箱包</a></dt>
+                        <dd>
+                            <a href="#">双肩包</a>
+                            <a href="#">斜挎包</a>
+                            <a href="#">钱包</a>
+                            <a href="#">男包</a>
+                            <a href="#">女包</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">配饰/内衣</a></dt>
+                        <dd>
+
+                            <a href="#" class="my-a-class">男内裤</a>
+                            <a href="#">男袜</a>
+                            <a href="#">女袜</a>
+                            <a href="#">棒球帽</a>
+                            <a href="#">男腰带</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><a href="#">折扣SALE</a></dt>
+                        <dd>
+                            <a href="#">1折区</a>
+                            <a href="#">2折区</a>
+                            <a href="#">3折区</a>
+                            <a href="#" class="my-a-class">59元封顶</a>
+
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!--轮播图-->
+        <div class="banner_img">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/sylb-women.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/sylb-406-cx.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/sylb-nsrj.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/sylb-406-pl.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc_zmglb.jpg" alt=""></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
+
+
+        </div>
+        <div class="banner_right">
+            <ul>
+                <li><img src="images/duanma404hu_20.jpg" alt=""></li>
+                <li><img src="images/duanma404hu_21.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="hot-good">
+    <div class="container hot">
+        <div class="hot-good-btn">
+            <span><img src="images/rec_btn_lt.png" alt=""></span>
+            <span><img src="images/rec_btn_rt.png" alt=""></span>
+        </div>
+
+        <ul>
+            <li><img src="images/duanma404hu_11.jpg" alt=""></li>
+            <li><img src="images/duanma404hu_13.jpg" alt=""></li>
+            <li><img src="images/duanma404hu_14.jpg" alt=""></li>
+            <li><img src="images/duanma404hu_15.jpg" alt=""></li>
+            <li style="margin-right: 0; opacity: 1;"><img src="images/duanma404hu_12.jpg" alt=""></li>
+            <li><img src="images/cfhfgjf-4.jpg" alt=""></li>
+            <li><img src="images/01197.jpg" alt=""></li>
+            <li><img src="images/01198.jpg" alt=""></li>
+            <li><img src="images/011999.jpg" alt=""></li>
+            <li style="margin-right: 0"><img src="images/011810.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>
+
+<!--中间内容-->
+<section class="all-content">
+    <div class="container boy">
+        <div class="boy_top">
+            <h3>男生馆</h3>
+            <div class="tab pull-right">
+                <div class="rm">
+                    <a href="javascript:void(0);" class="act">热门</a>
+                    <div class="rm_content">
+                        <div class="container rm_content_nr">
+                            <div class="row">
+                                <div class="col-md-3 re_content_left"><img src="images/331-boy-1.jpg" alt=""></div>
+                                <div class="col-md-6 re_content_mid">
+                                    <img src="images/331-boy-2.jpg" alt="">
+                                    <img style="float:left" src="images/331-boy-4.jpg" alt="">
+                                    <img style="float:left" src="images/331-boy-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 re_content_right">
+                                    <img src="images/331-boy-3.jpg" alt="">
+                                    <img src="images/331-boy-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jk">
+                    <a href="javascript:void(0);">夹克</a>
+                    <div class="jk_content">
+                        <div class="container jk_content_nr">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img alt="100%x200" src="images/245288_00_m2--w_350.jpg"
+                                             data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245270_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245270_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245270_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245270_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245288_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245288_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/245288_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥1   99</span><span
+                                                    class="old_price">￥339</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cxcs"><a href="javascript:void(0);">长袖衬衫</a></div>
+                <div class="kz"><a href="javascript:void(0);">裤装</a></div>
+            </div>
+        </div>
+        <div class="boy_content">
+            <img src="images/331-boy.jpg" alt="">
+            <div class="links">
+                <a href="#">风衣夹克</a>
+                <a href="#">长袖衬衫</a>
+                <a href="#">时尚卫衣</a>
+                <a href="#">休闲长裤</a>
+                <a href="#">潮流鞋履</a>
+                <a href="#">箱包配饰</a>
+            </div>
+
+            <div class="imgs">
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container boy">
+        <div class="boy_top">
+            <h3>女生馆</h3>
+            <div class="tab pull-right">
+                <div class="rm">
+                    <a href="javascript:void(0);" class="act">热门</a>
+                    <div class="rm_content">
+                        <div class="container rm_content_nr">
+                            <div class="row">
+                                <div class="col-md-3 re_content_left"><img src="images/331-girl-1.jpg" alt=""></div>
+                                <div class="col-md-6 re_content_mid">
+                                    <img src="images/331-girl-2.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-4.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 re_content_right">
+                                    <img src="images/331-girl-3.jpg" alt="">
+                                    <img src="images/331-girl-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jk">
+                    <a href="javascript:void(0);">夹克</a>
+                    <div class="jk_content">
+                        <div class="container jk_content_nr">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img alt="100%x200" src="images/231622_00_m2--w_350.jpg"
+                                             data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥399</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/231622_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">ME＆CITY &nbsp;女廓形感肌理夹克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥199</span><span class="old_price">￥339</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cxcs"><a href="javascript:void(0);">卫衣</a></div>
+                <div class="kz"><a href="javascript:void(0);">裤装</a></div>
+            </div>
+        </div>
+        <div class="boy_content">
+            <img src="images/331-girl.jpg" alt="">
+            <div class="links">
+                <a href="#">风衣夹克</a>
+                <a href="#">长袖衬衫</a>
+                <a href="#">时尚卫衣</a>
+                <a href="#">休闲长裤</a>
+                <a href="#">潮流鞋履</a>
+                <a href="#">箱包配饰</a>
+            </div>
+
+            <div class="imgs">
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container boy">
+        <div class="boy_top">
+            <h3>潮牌馆</h3>
+            <div class="tab pull-right">
+                <div class="rm">
+                    <a href="javascript:void(0);" class="act">热门</a>
+                    <div class="rm_content">
+                        <div class="container rm_content_nr">
+                            <div class="row">
+                                <div class="col-md-3 re_content_left"><img src="images/331-girl-1.jpg" alt=""></div>
+                                <div class="col-md-6 re_content_mid">
+                                    <img src="images/331-girl-2.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-4.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 re_content_right">
+                                    <img src="images/331-girl-3.jpg" alt="">
+                                    <img src="images/331-girl-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jk">
+                    <a href="javascript:void(0);">夹克</a>
+                    <div class="jk_content">
+                        <div class="container jk_content_nr">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img alt="100%x200" src="images/231622_00_m2--w_350.jpg"
+                                             data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥399</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/231622_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">ME＆CITY &nbsp;女廓形感肌理夹克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥199</span><span class="old_price">￥339</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cxcs"><a href="javascript:void(0);">卫衣</a></div>
+                <div class="kz"><a href="javascript:void(0);">裤装</a></div>
+            </div>
+        </div>
+        <div class="boy_content">
+            <img src="images/cplc_02.jpg" alt="">
+            <div class="links">
+                <a href="#">风衣夹克</a>
+                <a href="#">长袖衬衫</a>
+                <a href="#">时尚卫衣</a>
+                <a href="#">休闲长裤</a>
+                <a href="#">潮流鞋履</a>
+                <a href="#">箱包配饰</a>
+            </div>
+
+            <div class="imgs">
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container boy">
+        <div class="boy_top">
+            <h3>运动馆</h3>
+            <div class="tab pull-right">
+                <div class="rm">
+                    <a href="javascript:void(0);" class="act">热门</a>
+                    <div class="rm_content">
+                        <div class="container rm_content_nr">
+                            <div class="row">
+                                <div class="col-md-3 re_content_left"><img src="images/331-girl-1.jpg" alt=""></div>
+                                <div class="col-md-6 re_content_mid">
+                                    <img src="images/331-girl-2.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-4.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 re_content_right">
+                                    <img src="images/331-girl-3.jpg" alt="">
+                                    <img src="images/331-girl-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jk">
+                    <a href="javascript:void(0);">夹克</a>
+                    <div class="jk_content">
+                        <div class="container jk_content_nr">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img alt="100%x200" src="images/231622_00_m2--w_350.jpg"
+                                             data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥399</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/231622_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">ME＆CITY &nbsp;女廓形感肌理夹克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥199</span><span class="old_price">￥339</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cxcs"><a href="javascript:void(0);">卫衣</a></div>
+                <div class="kz"><a href="javascript:void(0);">裤装</a></div>
+            </div>
+        </div>
+        <div class="boy_content">
+            <img src="images/yundong329_01.jpg" alt="">
+            <div class="links">
+                <a href="#">风衣夹克</a>
+                <a href="#">长袖衬衫</a>
+                <a href="#">时尚卫衣</a>
+                <a href="#">休闲长裤</a>
+                <a href="#">潮流鞋履</a>
+                <a href="#">箱包配饰</a>
+            </div>
+
+            <div class="imgs">
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container boy">
+        <div class="boy_top">
+            <h3>儿童馆</h3>
+            <div class="tab pull-right">
+                <div class="rm">
+                    <a href="javascript:void(0);" class="act">热门</a>
+                    <div class="rm_content">
+                        <div class="container rm_content_nr">
+                            <div class="row">
+                                <div class="col-md-3 re_content_left"><img src="images/331-girl-1.jpg" alt=""></div>
+                                <div class="col-md-6 re_content_mid">
+                                    <img src="images/331-girl-2.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-4.jpg" alt="">
+                                    <img style="float:left" src="images/331-girl-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 re_content_right">
+                                    <img src="images/331-girl-3.jpg" alt="">
+                                    <img src="images/331-girl-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jk">
+                    <a href="javascript:void(0);">夹克</a>
+                    <div class="jk_content">
+                        <div class="container jk_content_nr">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img alt="100%x200" src="images/231622_00_m2--w_350.jpg"
+                                             data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥399</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/231622_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">ME＆CITY &nbsp;女廓形感肌理夹克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥399</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/224643_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/857881_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price"><span class="new_price">￥199</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img data-src="holder.js/100%x200" alt="100%x200"
+                                             src="images/234839_00_m2--w_350.jpg" data-holder-rendered="true">
+                                        <div class="caption">
+                                            <div class="name">METERSBONWE 【春推荐】男翻领左胸印字茄克</div>
+                                            <div class="price">
+                                                <span class="new_price">￥199</span><span class="old_price">￥339</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cxcs"><a href="javascript:void(0);">卫衣</a></div>
+                <div class="kz"><a href="javascript:void(0);">裤装</a></div>
+            </div>
+        </div>
+        <div class="boy_content">
+            <img src="images/331-kid.jpg" alt="">
+            <div class="links">
+                <a href="#">风衣夹克</a>
+                <a href="#">长袖衬衫</a>
+                <a href="#">时尚卫衣</a>
+                <a href="#">休闲长裤</a>
+                <a href="#">潮流鞋履</a>
+                <a href="#">箱包配饰</a>
+            </div>
+
+            <div class="imgs">
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+                <a href="#"><img src="images/0831m_10.jpg" alt=""></a>
+                <a href="#"><img src="images/PPA184.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--广告-->
+<section class="ad">
+    <div class="container myAd">
+        <ul>
+            <li><a href="#"><img src="images/zyshare01.png" alt=""></a></li>
+            <li><a href="#"><img src="images/zyshare02.png" alt=""></a></li>
+            <li><a href="#"><img src="images/zyshare03.png" alt=""></a></li>
+            <li class="ad_last">
+                <a href="#"><img src="images/shanggd.jpg" alt=""></a>
+                <div class="Contact_Bottom">
+                    <dl>
+                        <dt><img src="images/indexonline.png" alt=""></dt>
+                        <dd>在线客服</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/indexopinion.png" alt=""></dt>
+                        <dd>意见反馈</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/indexsurvey.png" alt=""></dt>
+                        <dd>问卷调差</dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+
+<!--//底部-->
+
+<footer>
+    <div class="container mbshop_bottom">
+
+        <div class="mbshop_bottom_guide clearfix">
+
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a target="_blank" href="#">
+                    注册新用户</a></dd>
+                <dd><a target="_blank" href="#">
+                    用户协议</a></dd>
+                <dd><a target="_blank" href="#">
+                    找回密码</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a target="_blank" href="#">
+                    红包使用说明</a></dd>
+                <dd><a target="_blank" href="#">
+                    购物流程</a></dd>
+                <dd><a target="_blank" href="#">
+                    订单状态</a></dd>
+                <dd><a target="_blank" href="#">
+                    邦购币绑定与使用</a></dd>
+                <dd><a target="_blank" href="#">
+                    积分说明</a></dd>
+            </dl>
+            <dl>
+                <dt>配送方式</dt>
+                <dd><a target="_blank" href="#">
+                    配送范围</a></dd>
+                <dd><a target="_blank" href="#">
+                    订单拆分</a></dd>
+                <dd><a target="_blank" href="#">
+                    商品验货与签收</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式</dt>
+                <dd><a target="_blank" href="#">
+                    发票制度</a></dd>
+                <dd><a target="_blank" href="#">
+                    支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a target="_blank" href="#">
+                    退换货政策</a></dd>
+                <dd><a target="_blank" href="#">
+                    退换办理流程</a></dd>
+                <dd><a target="_blank" href="#">
+                    退款说明</a></dd>
+            </dl>
+            <dl>
+                <dt>联系方式</dt>
+                <dd><a href="#">在线客服</a></dd>
+                <dd><a href="#">商家入驻：bgzs@metersbonwe.com</a></dd>
+            </dl>
+        </div>
+
+
+        <div class="mbshop_bottomCopyright">
+            <p>CopyRight © 2000-2017, 版权所有&nbsp;上海美特斯邦威服饰股份有限公司 banggo.com 沪ICP备05033127号 021-38119999</p>
+            <span>
+				<a href="#"><img src="http://s.banggo.com/pub1/bgweb/default/images/lz_beian_h40.png" data-original="http://s.banggo.com/pub1/bgweb/default/images/lz_beian_h40.png" alt="网站备案信息" ></a>
+				<a href="#"><img src="http://s.banggo.com/pub1/bgweb/default/images/lz_shgs_h40.png" data-original="http://s.banggo.com/pub1/bgweb/default/images/lz_shgs_h40.png" alt="上海工商" ></a>
+			</span>
+        </div>
+
+
+    </div>
+</footer>
+
+
+
+
+<!--回到顶部-->
+<section class="fixed-bottom">
+    <a href="#" id="toTop"></a>
+    <a href="#" class="online"></a>
+</section>
+
+
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/swiper/dist/js/swiper.jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/BangGou.js"></script>
+
+
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        effect : 'fade',
+        fade: {
+            crossFade: false
+        },
+        autoplay:2500,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+
+    })
+</script>
+</body>
+</html>
+
+
+<script>
+
+    var p = window.localStorage.getItem("userName");
+
+    if(p!=null){
+        var userName = p.split("&")[0].split("=")[1];
+        $(".have-user .userName").text(userName);
+        $(".header_nav .login").find(".No-user").hide().end().children(".have-user").show();
+    }else{
+        $(".header_nav .login").children(".have-user").hide().end().find(".No-user").show();
+
+    }
+
+
+    $(".tuichu").on("click",function(){
+
+        window.localStorage.removeItem("userName");
+        $(".header_nav .login").children(".have-user").hide().end().find(".No-user").show();
+
+    });
+
+
+</script>

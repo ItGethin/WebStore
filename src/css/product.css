@@ -1,0 +1,573 @@
+header {
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid #dcdcdc;
+}
+header .myHeader {
+  width: 1200px;
+  padding: 0;
+}
+header .myHeader p {
+  font-size: 12px;
+  color: #999;
+  line-height: 32px;
+  margin: 0;
+  float: left;
+}
+header .myHeader .header_nav {
+  list-style: none;
+  float: right;
+  margin: 0;
+}
+header .myHeader .header_nav li {
+  float: left;
+  height: 32px;
+  padding: 0 10px;
+}
+header .myHeader .header_nav li > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #999;
+  line-height: 32px;
+}
+header .myHeader .header_nav .login .No-user {
+  position: relative;
+}
+header .myHeader .header_nav .login .No-user:hover .loginBox {
+  display: block;
+}
+header .myHeader .header_nav .login .No-user > a {
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-right: 15px;
+  height: 26px;
+  z-index: 1001;
+  text-decoration: none;
+  color: #999;
+  position: relative;
+}
+header .myHeader .header_nav .login .No-user > a:hover {
+  border-left: 1px solid #B5B5B5;
+  border-right: 1px solid #B5B5B5;
+  border-bottom: 1px solid #fff;
+}
+header .myHeader .header_nav .login .No-user > a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: white;
+  top: 25px;
+  left: 0;
+  width: 49px;
+  height: 2px;
+}
+header .myHeader .header_nav .login .No-user .loginBox {
+  display: none;
+  position: absolute;
+  width: 94px;
+  padding: 5px 10px 10px;
+  border: 1px solid #B5B5B5;
+  top: 25px;
+  left: 0px;
+  background: white;
+  z-index: 1000;
+}
+header .myHeader .header_nav .login .No-user .loginBox > a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-decoration: none;
+}
+header .myHeader .header_nav .login .have-user {
+  padding: 5px 0;
+}
+header .myHeader .header_nav .myBw {
+  height: 26px;
+  width: 70px;
+  padding: 0 10px;
+  position: relative;
+  background: url("../images/Veo_mbshop_spirit_pic.png") no-repeat 60px -36px;
+}
+header .myHeader .header_nav .myBw:hover {
+  width: 70px;
+  border-left: 1px solid #B5B5B5;
+  border-right: 1px solid #B5B5B5;
+}
+header .myHeader .header_nav .myBw:hover .myBwBox {
+  display: block;
+}
+header .myHeader .header_nav .myBw .myBwBox {
+  display: none;
+  position: absolute;
+  width: 70px;
+  padding: 5px 10px 10px;
+  border: 1px solid #B5B5B5;
+  border-top: none;
+  left: -1px;
+  top: 26px;
+  background: #fff;
+}
+header .myHeader .header_nav .myBw .myBwBox > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #666;
+}
+header .myHeader .header_nav .download {
+  position: relative;
+  background: url(../images/Iphone-vertical.png) no-repeat left center;
+}
+header .myHeader .header_nav .download:hover .ewm {
+  display: block;
+}
+header .myHeader .header_nav .download .ewm {
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: -7px;
+}
+/*头部*/
+.top {
+  width: 100%;
+  height: 65px;
+}
+.top .myTop {
+  height: 60px;
+  padding: 5px 0 0 0;
+  width: 1200px;
+}
+.top .myTop .logo {
+  width: 266px;
+  height: 73px;
+  float: left;
+  margin-left: -23px;
+  background: url(../images/mbshop_new_logo2.png);
+}
+.top .myTop .logo:hover {
+  opacity: 0.8;
+}
+.top .myTop .top_mid {
+  width: 750px;
+  float: left;
+}
+.top .myTop .top_mid .top_search {
+  float: left;
+  margin-top: 25px;
+  height: 34px;
+}
+.top .myTop .top_mid .top_search .s1 {
+  height: 32px;
+  width: 290px;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #d51819;
+}
+.top .myTop .top_mid .top_search .s1 .placeholder {
+  color: #d51819;
+}
+.top .myTop .top_mid .top_search .s2 {
+  width: 80px;
+  height: 32px;
+  background: #d51819;
+  outline: none;
+  border: 1px solid #d51819;
+  color: white;
+}
+.top .myTop .top_mid .top_searchKey {
+  margin-top: 32px;
+  width: 350px;
+  float: right;
+}
+.top .myTop .top_mid .top_searchKey a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  padding: 0 5px;
+}
+.top .myTop .top_mid .top_searchKey a + a {
+  border-left: 1px solid #dce4ee;
+}
+.top .myTop .top_mid .top_searchKey a:first-child,
+.top .myTop .top_mid .top_searchKey a:last-child {
+  color: #d30a06;
+}
+.top .myTop .top_right {
+  width: 150px;
+  height: 55px;
+  float: right;
+  background: url(../images/Veo_mbshop_spirit_pic.png) no-repeat 0 -410px;
+}
+.top .myTop .top_right a {
+  padding-left: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  display: block;
+  margin-top: 28px;
+}
+.top .myTop .top_right a span {
+  color: #d93938;
+}
+nav {
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px solid #d51819;
+  margin-top: 20px;
+}
+nav .myNav {
+  width: 1200px;
+  padding: 0;
+}
+nav .myNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .myNav ul li {
+  float: left;
+}
+nav .myNav ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #646464;
+  font-weight: bold;
+  padding: 0 20px;
+  text-decoration: none;
+}
+nav .myNav ul li a:hover {
+  opacity: 0.8;
+}
+nav .myNav ul li:first-child {
+  height: 40px;
+  width: 236px;
+  background: #d51819;
+  color: white;
+}
+nav .myNav ul li:first-child i {
+  margin-top: 11px;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 22px;
+}
+nav .myNav ul li:first-child span {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+.product-list {
+  margin-top: 20px;
+  width: 100%;
+}
+.product-list .myProduct {
+  width: 1200px;
+  padding: 0;
+}
+.product-list .myProduct .myProduct_top .myBreadcrumb {
+  padding: 15px 0 5px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.product-list .myProduct .myProduct_top .myBreadcrumb > li {
+  display: inline-block;
+}
+.product-list .myProduct .myProduct_top .myBreadcrumb > li a {
+  color: #333;
+}
+.product-list .myProduct .myProduct_top .myBreadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.product-list .myProduct .myProduct_content .list_left {
+  margin-right: 30px;
+  float: left;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs {
+  width: 480px;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .bigImg {
+  width: 480px;
+  height: 480px;
+  position: relative;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .bigImg #smallImg {
+  width: 480px;
+  height: 480px;
+  position: relative;
+  background: url(../images/226399_00--w_500_h_500.jpg) center;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .bigImg #smallImg #smallArea {
+  display: none;
+  width: 230px;
+  height: 230px;
+  background: rgba(250, 250, 250, 0.6);
+  position: absolute;
+  left: 40px;
+  top: 0;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .bigImg #bigArea {
+  display: none;
+  overflow: hidden;
+  width: 480px;
+  height: 480px;
+  background: rgba(200, 200, 250, 0.5);
+  position: absolute;
+  left: 530px;
+  top: 0;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .smallImg {
+  padding-top: 20px;
+  width: 500px;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .smallImg img {
+  float: left;
+  display: block;
+  border: 1px solid #999;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_imgs .smallImg .imgactive {
+  border: 1px solid #F8584F;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_text {
+  width: 500px;
+  color: #999;
+  margin-top: 25px;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_text > div {
+  font-size: 14px;
+  display: inline-block;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_text .text_id {
+  margin-right: 35px;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_text .text_share {
+  padding-left: 18px;
+  margin: 0 35px;
+  background: url(../images/share.png) no-repeat 0 3px;
+}
+.product-list .myProduct .myProduct_content .list_left .product_left_text .text_zan {
+  padding-left: 18px;
+  color: #f8584f;
+  margin-left: 40px;
+  background: url("../images/zan.png") no-repeat 0 4px;
+}
+.product-list .myProduct .myProduct_content .list_right {
+  float: left;
+}
+.product-list .myProduct .myProduct_content .list_right .title {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+.product-list .myProduct .myProduct_content .list_right .title > a {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo {
+  width: 670px;
+  height: 90px;
+  background-color: #f6f6f6;
+  margin-top: 18px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_price {
+  padding: 15px 15px 0;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_price b {
+  font-weight: normal;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_price #salePriceText {
+  color: #f8584f;
+  font-size: 22px;
+  font-weight: 700;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_price span {
+  padding: 3px 10px;
+  background-color: #f84646;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate {
+  padding: 15px 15px 0;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate > div {
+  font-size: 12px;
+  float: left;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate .mbshop_detail_rebateRule {
+  position: relative;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate .mbshop_detail_rebateRule span {
+  font-size: 12px;
+  text-decoration: underline;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate .mbshop_detail_rebateRule .mbshop_detail_rebateRule_open {
+  display: none;
+  position: absolute;
+  width: 400px;
+  left: -350px;
+  box-shadow: 0 0 15px #ccc;
+  padding: 10px;
+  background-color: #fff;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_baseinfo ul .mbshop_detail_rebate .mbshop_detail_rebateRule:hover .mbshop_detail_rebateRule_open {
+  display: block;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_saleinfo {
+  line-height: 16px;
+  padding: 6px 0;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_saleinfo span {
+  display: inline-block;
+  margin-right: 55px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_saleinfo span i {
+  color: #f8584f;
+  margin: 0 4px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList {
+  margin-top: 20px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dt {
+  font-size: 12px;
+  color: #666;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dt i {
+  font-style: normal;
+  color: #999;
+  margin-left: 5px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dd {
+  padding-top: 10px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dd a {
+  box-sizing: content-box;
+  border: 1px solid #DCDCDC;
+  padding: 1px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dd a img {
+  width: 100%;
+  height: 100%;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dd a:hover {
+  border-color: #F8584F;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .color_list dd .select {
+  border: 2px solid #F8584F;
+  padding: 0;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .size_list dt {
+  font-size: 12px;
+  color: #666;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .size_list dt i {
+  font-style: normal;
+  color: #999;
+  margin-left: 5px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .size_list dd a {
+  font-size: 12px;
+  color: #999;
+  box-sizing: content-box;
+  border: 1px solid #DCDCDC;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_colorSizeList .size_list dd a:hover {
+  border-color: #F8584F;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_num i {
+  font-style: normal;
+  font-size: 12px;
+  color: #666;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_num a {
+  text-decoration: none;
+  padding: 3px 9px;
+  border: 1px solid #999;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_num input {
+  border: 1px solid #999;
+  outline: none;
+  width: 42px;
+  text-align: center;
+  color: #999;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_num b {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_btn_bag {
+  margin-top: 20px;
+  height: auto;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_btn_bag a {
+  display: inline-block;
+  padding: 9px 65px;
+  background: #F8584F;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_btn_bag a:hover {
+  color: #000;
+  background-color: #FF7A72;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_keywords {
+  margin-top: 20px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_keywords span {
+  margin-right: 15px;
+  font-size: 12px;
+  color: #000;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_keywords a {
+  color: #999;
+  text-decoration: none;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_packageUseAlert {
+  margin-top: 20px;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_packageUseAlert span {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #000;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_packageUseAlert i {
+  font-style: normal;
+  position: relative;
+}
+.product-list .myProduct .myProduct_content .list_right .mbshop_detail_packageUseAlert i:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #666;
+}

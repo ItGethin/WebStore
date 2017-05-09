@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>邦购</title>
+
+    <!-- Bootstrap -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/car.css">
+    <link rel="shortcut icon" href="http://s.banggo.com/pub1/bgweb/default/images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../../node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../node_modules/respond/main.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<header>
+    <div class="container myHeader">
+        <p>欢迎来到邦购网，全场满199元包邮</p>
+        <ul class="header_nav">
+            <li class="login">
+                <div class="No-user">
+                    <a href="#" onclick="go_login()">登录</a>
+                    <div class="loginBox">
+                        <a href="#">QQ账户登录</a>
+                        <a href="#">支付宝登录</a>
+                        <a href="#">微信账户登录</a>
+                    </div>
+                </div>
+                <div class="have-user" style="display: none">
+                    <span class="userName">localhost</span>
+                    <a href="#" class="tuichu">[退出]</a>
+                </div>
+            </li>
+            <li><a href="#" onclick="go_register()">注册</a></li>
+            <li class="myBw">
+                <a href="#">我的邦购</a>
+                <div class="myBwBox">
+                    <a href="#">我的订单</a>
+                    <a href="#">我的积分</a>
+                    <a href="#">我的点赞</a>
+                    <a href="#">收货地址</a>
+                </div>
+            </li>
+            <li><a href="#">会员中心</a></li>
+            <li class="download">
+                <a href="#">下载APP</a>
+                <div class="ewm">
+                    <img src="../images/mbshop_pic_erweima.jpg" alt="">
+                </div>
+            </li>
+            <li><a href="#">微博&nbsp; 微信</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="mbshop_new_headtop">
+    <div class="container headtop main">
+        <a href="#">首页</a>
+    </div>
+
+</section>
+
+<section class="mbshop_cart_1127_tab_up">
+    <div class="container main tab_up">
+        <h3>购物袋</h3>
+    </div>
+</section>
+
+<section class="list">
+    <table class="container main mylist">
+        <thead>
+        <tr>
+            <th class="all"><label><input type="checkbox"/>全选</label></th>
+            <th>商品信息</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>总价</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+            
+           
+            
+        </tbody>
+    </table>
+</section>
+
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/BangGou.js"></script>
+</body>
+</html>
+
+<script>
+
+    $(function () {
+
+            var p = window.localStorage.getItem("userName");
+            var userName = p.split("&")[0].split("=")[1];
+        $.get("../../php/car.php",{u_name:userName},function(result){
+            var data = result.data;
+
+            console.log(data);
+
+            for(var i=0;i<data.length;i++){
+
+                var sum = parseInt(data[i].p_price)*parseInt(data[i].p_num);
+
+                $list = '<tr><th><input type="checkbox"/></th><th>'+data[i].p_name+'</th><th>'+data[i].p_price+'</th><th>'+data[i].p_num+'</th><th>'+sum+'</th><th><button>删除</button></th></tr>';
+
+                $("tbody").append($list);
+            }
+
+        },"json");
+    });
+
+</script>

@@ -1,0 +1,2 @@
+IE8不支持媒体查询，需要引入 respond.min.js
+ie不知道最新的html5标签，需要引入 html5shiv.min ，本质工作 就是 document.createElement("header")

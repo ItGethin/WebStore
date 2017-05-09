@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>邦购</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../../node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../node_modules/respond/main.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <div class="container myHeader">
+            <a href="#"><img src="../images/logo.jpg" alt=""></a>
+        </div>
+    </header>
+
+    <section class="login_main">
+        <div class="container myLogin">
+            <div class="myLogin_left">
+                <img src="../images/login_banner.jpg" alt="">
+            </div>
+            <div class="myLogin_right">
+                <div id="jsSeltab" class="seltab clearfix">
+                    <h3 class="t1 cstyle" data-ltn="用户名:" data-ltw="登录密码:">帐户登录</h3>
+                    <h3 class="t2" data-ltn="手机号:" data-ltw="登录密码:">手机登录</h3>
+                    <h3 class="t3" data-ltn="卡&nbsp;号:" data-ltw="卡密码:">卡登录</h3>
+                </div>
+                <div class="login_content">
+                    <form id="myform">
+                        <div><span class="ltn">用户名:</span><div><input type="text" name="userName" id="userName"/></div></div>
+                        <div><span class="ltw">登录密码:</span><div><input type="text" name="userPwd" id="userPwd"/></div></div>
+                        <div class="yzm"><span>验证码:</span><div><input type="text"/></div><i><span class="yam_nr">N9kV</span><a href="javascript:void(0);" onclick="change()">换一个</a></i></div>
+
+                        <div class="cbs">
+                            <input type="checkbox" id="rememeberName"/><label for="rememeberName">记住用户名</label>
+                            <input type="checkbox" id="rememeberMe"/><label for="rememeberMe">自动登录</label>
+                        </div>
+
+
+                        <div class="login_go">
+                            <span class="btn btn-myDanger">登录</span>
+                            <a href="#" class="btn btn-myLink">找回密码？</a>
+                        </div>
+                    </form>
+
+                    <div class="login_bottom">
+                        <span class="lmr5">还不是邦购网用户？马上加入吧~~~</span>
+                        <span class="btn btn-myDefault">免费注册&gt;&gt;</span>
+                    </div>
+
+
+                    <div class="login_surport">
+                        <h4>或者使用合作网站登录：</h4>
+                        <p class="clearfix">
+                            <a href="#" class="icon_qq" title="QQ">QQ</a>
+                            <a href="#" class="icon_alipay" title="支付宝">支付宝</a>
+                            <a href="#" class="icon_weibo" title="新浪微博">新浪微博</a>
+                            <!--
+                            <a href="http://act.banggo.com/UnionLogin?platform=qqopen" class="icon_qq" title="QQ">QQ</a>
+                            <a href="http://act.banggo.com/User/alipayLogin" class="icon_alipay" title="支付宝">支付宝</a>
+                            -->
+                            <a href="#" class="icon_weixin" title="微信">微信</a>
+                            <a href="#" class="icon_renren" title="人人网">人人网</a>
+                            <a style="cursor:default;"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container myFooter">
+            美特斯邦威集团网站：
+            <a href="#">美特斯邦威</a>
+            <a href="#">ME&CITY</a>
+            <a href="#">CH'IN祺</a>
+            <a href="#">邦购网</a>
+        </div>
+    </footer>
+
+
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/BangGou.js"></script>
+</body>
+</html>
+
+
+<script>
+
+    $(function(){
+
+        $("#myform .login_go .btn-myDanger").on("click",function(){
+
+            var para = $("#myform").serialize(); 
+
+            // console.log(para);
+            $.ajax({
+                url:"http://10.20.159.52/banggou1/php/login.php",
+                type:"post",
+                dataType:"json",
+                data:para,
+                success:function(result){
+
+                    // console.log(result);
+
+                    if(result.status==1){
+
+                     window.localStorage.setItem("userName",para);
+
+                     // var p = window.localStorage.getItem("userName");
+                     // console.log(p);
+
+                     window.location.href = "../index.html";
+                    }
+
+                }
+            })
+
+
+        });
+
+        //回去主页
+        $(".myHeader").find("img").on("click",function(){
+            window.location.href = "http://10.20.159.52/banggou1/src/index.html";
+        })
+
+    });
+
+</script>

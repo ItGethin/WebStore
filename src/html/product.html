@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>邦购</title>
+
+    <!-- Bootstrap -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="shortcut icon" href="http://s.banggo.com/pub1/bgweb/default/images/favicon.ico" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../../node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../node_modules/respond/main.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container myHeader">
+        <p>欢迎来到邦购网，全场满199元包邮</p>
+        <ul class="header_nav">
+            <li class="login">
+                <div class="No-user" >
+                    <a href="#" onclick="go_login()">登录</a>
+                    <div class="loginBox">
+                        <a href="#">QQ账户登录</a>
+                        <a href="#">支付宝登录</a>
+                        <a href="#">微信账户登录</a>
+                    </div>
+                </div>
+                <div class="have-user" style="display: none">
+                    <span class="userName">localhost</span>
+                    <a href="#" class="tuichu">[退出]</a>
+                </div>
+            </li>
+            <li><a href="#" onclick="go_register()">注册</a></li>
+            <li class="myBw">
+                <a href="#">我的邦购</a>
+                <div class="myBwBox">
+                    <a href="#">我的订单</a>
+                    <a href="#">我的积分</a>
+                    <a href="#">我的点赞</a>
+                    <a href="#">收货地址</a>
+                </div>
+            </li>
+            <li><a href="#">会员中心</a></li>
+            <li class="download">
+                <a href="#">下载APP</a>
+                <div class="ewm">
+                    <img src="../images/mbshop_pic_erweima.jpg" alt="">
+                </div>
+            </li>
+            <li><a href="#">微博&nbsp; 微信</a></li>
+        </ul>
+    </div>
+</header>
+
+<!--头部-->
+<section class="top">
+    <div class="container myTop">
+        <div class="logo"></div>
+        <div class="top_mid">
+            <div class="top_search">
+                <input type="text" class="s1" placeholder="2000+精选好货本期新到→"/><input type="button" value="搜索" class="s2"/>
+            </div>
+            <div class="top_searchKey">
+                <a href="#">夏尚新</a>
+                <a href="#">衬衫</a>
+                <a href="#">夹克</a>
+                <a href="#">休闲裤</a>
+                <a href="#">每满179减60</a>
+            </div>
+        </div>
+        <div class="top_right">
+            <a>购物袋 <span>0</span>件</a>
+        </div>
+    </div>
+
+</section>
+
+
+<nav>
+    <div class="container myNav">
+        <ul class="clearfix">
+            <li>
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                <span>商品分类</span>
+            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">潮品牌</a></li>
+            <li><a href="#">运动馆</a></li>
+            <li><a href="#">领券中心</a></li>
+            <li><a href="#">新客专享</a></li>
+            <li><a href="#">断码零利</a></li>
+            <li class="pull-right"><img src="../images/mobilegai.gif" alt=""></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<section class="product-list">
+    <div class="container myProduct">
+
+
+        <div class="myProduct_top">
+            <ol class="myBreadcrumb">
+                <li><a href="#">所有商品</a></li>
+                <li><a href="#">男装</a></li>
+                <li><a href="#">T恤</a></li>
+                <li class="active">短袖T恤</li>
+            </ol>
+        </div>
+
+
+        <div class="myProduct_content" id="myProduct_content">
+            <div class="list_left">
+                <div class="product_left_imgs">
+                    <div class="bigImg">
+                        <div id="smallImg">
+                            <div id="smallArea"></div>
+                        </div>
+
+                        <div id="bigArea">
+                            <img id="bigImg" src="../images/226399_00--w_1000_h_1000.jpg"
+                                 style="width:800px; height:800px; position: absolute; left: 0; top: 0;"/>
+                        </div>
+                    </div>
+                    <div class="smallImg clearfix">
+                        <img src="../images/226399_00--w_90_h_90.jpg" alt="" class="imgactive">
+                        <img src="../images/226399_29--w_90_h_90.jpg" alt="">
+                        <img src="../images/226399_01--w_90_h_90.jpg" alt="">
+                        <img src="../images/226399_02--w_90_h_90.jpg" alt="">
+                        <img src="../images/226399_03--w_90_h_90.jpg" alt="">
+                    </div>
+                </div>
+                <div class="product_left_text">
+                    <div class="text_id">商品标号:226399</div>
+                    <div class="text_share">分享</div>
+                    <div class="text_zan">点赞</div>
+                </div>
+            </div>
+            <div class="list_right">
+                <div class="title"><a href="#">Metersbonwe</a>男seven days印花T（支持14天退换）</div>
+                <div class="mbshop_detail_baseinfo">
+                    <ul>         <!--闪购 -->                             <!-- 价格 -->
+                        <li class="mbshop_detail_price">
+                            <b>售价：</b>
+                            <strong id="salePriceText"> ￥ 59 </strong>
+                            <span class="pull-right">10折</span>
+                        </li>
+                        <li class="mbshop_detail_rebate clearfix">
+                            <div> 本品不参加vip，svip折扣</div>
+                            <div class="mbshop_detail_rebateRule pull-right">
+                                <span>会员规则</span>
+                                <div class="mbshop_detail_rebateRule_open" > 在有效期1年内：<br>
+                                    累计购物满1000元则升级为VIP；未满1000元则降为普通会员。<br> 在有效期1年内：<br>
+                                    累计购物满2000元则升级为SVIP；如累计购物1000~1999元，则降为VIP；如累计购物未满1000元则降为普通会员。<br></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mbshop_detail_saleinfo">
+                    <span>销量: <i>4546</i></span>
+                    <span>累计评价:<i>412</i></span>
+                </div>
+
+                <div class="mbshop_detail_colorSizeList">
+
+                    <dl class="color_list">
+                        <dt>颜色: <i>亮白色</i></dt>
+                        <dd>
+                            <a href="javascript:void(0);" data-smallsrc="../images/226399_00_00--w_500.jpg" data-bigsrc="../images/226399_00_00--w_1000_h_1000.jpg"><img src="../images/226399_00_00--w_90_h_90.jpg" alt=""></a>
+                            <a href="javascript:void(0);" data-smallsrc="../images/226399_40_00--w_500.jpg" data-bigsrc="../images/226399_40_00--w_1000_h_1000.jpg"><img src="../images/226399_40_00--w_90_h_90.jpg" alt=""></a>
+                            <a href="javascript:void(0);" data-smallsrc="../images/226399_50_00--w_500.jpg" data-bigsrc="../images/226399_50_00--w_1000_h_1000.jpg"><img src="../images/226399_50_00--w_90_h_90.jpg" alt=""></a>
+                        </dd>
+                    </dl>
+                    <dl class="size_list">
+                        <dt>尺码: <i>请选择尺码</i></dt>
+                        <dd>
+                            <a href="javascript:void(0);">M:170/92A</a>
+                            <a href="javascript:void(0);">S:165/88A </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="mbshop_detail_num">
+                    <i>购买数量:</i>
+                    <span class="nums">
+                        <a href="javascript:void(0);" id="jianshao">-</a>
+                        <input type="text" value="1"/>
+                        <a href="javascript:void(0);" id="zenjia">+</a>
+                        <b>库存剩余 32 件</b>
+                    </span>
+                </div>
+
+                <div class="mbshop_detail_btn_bag">
+                    <a href="javascript:void(0);">加入购物车</a>
+                </div>
+
+                <div class="mbshop_detail_keywords">
+                    <span>浏览更多:</span>
+                    <a href="javascript:void(0);">短袖T恤</a>
+                </div>
+
+                <div class="mbshop_detail_packageUseAlert">
+                    <span>温馨提示:</span>
+                    <i>此商品不可使用积分</i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/BangGou.js"></script>
+</body>
+</html>
+
+<script>
+
+    $(function(){
+
+        $(".mbshop_detail_btn_bag").on("click",function(){
+
+            var p_name = $(".list_right .title").find("a").html();
+            var p_price = $("#salePriceText").html();
+            var p_num =$(".mbshop_detail_num .nums").children("input").val();
+             var p = window.localStorage.getItem("userName");
+            var userName = p.split("&")[0].split("=")[1];
+            // console.log(p_num);
+
+            $.post("../../php/insert.php",{
+                p_name1:p_name,
+                p_price1:p_price,
+                p_num1:p_num,
+                u_name:userName
+            },function(data){
+                console.log(data);
+            },"json")
+        })
+    });
+
+</script>

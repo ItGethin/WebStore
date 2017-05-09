@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>邦购</title>
+
+    <!-- Bootstrap -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../../node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../../node_modules/respond/main.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <div class="container myHeader">
+        <a href="#"><img src="../images/logo.jpg" alt=""></a>
+    </div>
+</header>
+
+
+<section class="register_content">
+
+    <div class="container myRegister">
+
+        <div class="top">
+            <a href="javascript:void(0);">手机注册</a>
+        </div>
+
+        <div class="contain clearfix">
+
+            <div class="contain_left">
+                <p>第一步：填写手机账户信息（以下内容均为必填）</p>
+                <form id="mobile_form">
+                    <div class="items first_items">
+                        <div class="text">用户名:</div>
+                        <div class="right_inp">
+                            <input type="text" class="input1" name="userName" id="userNmae"/>
+                            <span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="text">手机号码:</div>
+                        <div class="right_inp">
+                            <input type="text" class="input1" name="userTel" id="userTel"/>
+                            <span class="tips">请输入您的手机号</span>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="text">密码:</div>
+                        <div class="right_inp">
+                            <input type="text" class="input1" name="userPwd" id="userPwd"/>
+                            <span class="tips">请设置密码</span>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="text">验证码:</div>
+                        <div class="right_inp">
+                            <input type="text" class="input2"/>
+                            <span class="mySpan">
+                                <i>5XBA</i>
+                                <a href="javascript:void(0);" onclick="change()">换一张</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="items last_items">
+                        <div class="text">&nbsp;</div>
+                        <span class="btn btn-mobile-danger">发送激活码</span>
+                    </div>
+                </form>
+            </div>
+            <div class="contain_right"><img src="../images/bgowelcometext.png" alt=""></div>
+        </div>
+
+
+        <div class="LI_bottom">
+            美特斯邦威集团网站：
+            <a href="javascript:void(0);">美特斯邦威</a> |
+            <a href="javascript:void(0);">ME&amp;CITY</a> |
+            <a href="javascript:void(0);">CH'IN祺</a> |
+            <!-- <a href="http://www.myfstv.com/">时尚秘书</a> | -->
+            <a href="javascript:void(0);">邦购网</a>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/BangGou.js"></script>
+</body>
+</html>
+
+
+
+<script>
+
+    $(function(){
+
+
+        $(".last_items .btn-mobile-danger").on("click",function(){
+
+
+            var para = $("#mobile_form").serialize();
+            
+
+           $.ajax({
+                url:"http://10.20.159.52/banggou1/php/reg.php",
+                type:"post",
+                dataType:"json",
+                data:para,
+                success:function(result){
+
+                    console.log(result);
+                   
+                   if(result.status==1){
+
+                   window.location.href = "login.html";
+                   
+                   }else{
+
+                    console.log(result.str);
+                   }
+                }
+            })
+
+        });
+
+        $(".myHeader").find("img").on("click",function(){
+            window.location.href = "../index.html";
+        })
+
+    });
+
+</script>

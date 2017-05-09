@@ -1,0 +1,358 @@
+header {
+  width: 100%;
+}
+header .myHeader {
+  width: 980px;
+  padding: 0;
+  height: 100px;
+}
+.login_main {
+  width: 100%;
+}
+.login_main .myLogin {
+  margin-top: 25px;
+  width: 980px;
+  padding: 0;
+}
+.login_main .myLogin .myLogin_left {
+  float: left;
+}
+.login_main .myLogin .myLogin_right {
+  float: left;
+}
+.login_main .myLogin .myLogin_right .seltab {
+  width: 340px;
+  height: 40px;
+}
+.login_main .myLogin .myLogin_right .seltab h3 {
+  box-sizing: content-box;
+  margin: 0;
+  width: 110px;
+  float: left;
+  color: #666;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+}
+.login_main .myLogin .myLogin_right .seltab .cstyle {
+  top: 0;
+  padding-top: 2px;
+  border-top: 2px solid #c00;
+  border-bottom: none;
+}
+.login_main .myLogin .myLogin_right .login_content {
+  width: 337px;
+  height: auto;
+  border: 1px solid #CCC;
+  border-top: none;
+  padding-top: 30px;
+  margin-top: -2px;
+}
+.login_main .myLogin .myLogin_right .login_content form {
+  height: 240px;
+}
+.login_main .myLogin .myLogin_right .login_content form > div {
+  width: 338px;
+  height: 50px;
+}
+.login_main .myLogin .myLogin_right .login_content form > div > span {
+  display: inline-block;
+  width: 80px;
+  color: #666;
+  line-height: 28px;
+  font-size: 14px;
+  text-align: right;
+}
+.login_main .myLogin .myLogin_right .login_content form > div > div {
+  display: inline-block;
+  margin-left: 8px;
+}
+.login_main .myLogin .myLogin_right .login_content form > div > div input {
+  border: 1px solid #CCC;
+  width: 220px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 5px;
+  margin: 0 10px 0 0;
+}
+.login_main .myLogin .myLogin_right .login_content form > .yzm > div {
+  width: 62px;
+}
+.login_main .myLogin .myLogin_right .login_content form > .yzm > div input {
+  width: 62px;
+  border: 1px solid #CCC;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 5px;
+  margin: 0 10px 0 0;
+}
+.login_main .myLogin .myLogin_right .login_content form > .yzm i {
+  display: inline-block;
+  height: 26px;
+  font-size: 14px;
+}
+.login_main .myLogin .myLogin_right .login_content form > .yzm i span {
+  display: inline-block;
+  height: 26px;
+  padding: 0 10px;
+}
+.login_main .myLogin .myLogin_right .login_content form > .yzm i a {
+  text-decoration: none;
+  color: #000;
+}
+.login_main .myLogin .myLogin_right .login_content form .cbs {
+  height: 28px;
+  text-align: center;
+}
+.login_main .myLogin .myLogin_right .login_content form .cbs #rememeberMe {
+  margin-left: 22px;
+}
+.login_main .myLogin .myLogin_right .login_content form .cbs label {
+  margin: 0 0 0 5px;
+  position: relative;
+  top: -2px;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go {
+  text-align: center;
+  width: 338px;
+  height: 34px;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger {
+  width: 104px;
+  height: 34px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #eb1010;
+  border-color: #eb1010;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .open > .dropdown-toggle.btn-myDanger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:active:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.active:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .open > .dropdown-toggle.btn-myDanger:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:active:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.active:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .open > .dropdown-toggle.btn-myDanger:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:active.focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.active.focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .open > .dropdown-toggle.btn-myDanger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger:active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .open > .dropdown-toggle.btn-myDanger {
+  background-image: none;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.disabled:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger[disabled]:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myDanger:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.disabled:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger[disabled]:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myDanger:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger.disabled.focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger[disabled].focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myDanger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myDanger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink {
+  color: #333;
+  font-weight: normal;
+  border-radius: 0;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink.active,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink[disabled],
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myLink {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:active {
+  border-color: transparent;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink:focus {
+  color: #F60;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink[disabled]:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myLink:hover,
+.login_main .myLogin .myLogin_right .login_content form .login_go .btn-myLink[disabled]:focus,
+.login_main .myLogin .myLogin_right .login_content form .login_go fieldset[disabled] .btn-myLink:focus {
+  color: #777;
+  text-decoration: none;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom {
+  width: 318px;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-top: 1px solid #F1F1F1;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .lmr5 {
+  font-size: 12px;
+  float: left;
+  display: inline-block;
+  width: 195px;
+  line-height: 32px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault {
+  display: inline-block;
+  width: 95px;
+  height: 27px;
+  line-height: 14px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:active,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.active,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .open > .dropdown-toggle.btn-myDefault {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:active:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.active:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .open > .dropdown-toggle.btn-myDefault:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:active:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.active:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .open > .dropdown-toggle.btn-myDefault:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:active.focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.active.focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .open > .dropdown-toggle.btn-myDefault.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault:active,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.active,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .open > .dropdown-toggle.btn-myDefault {
+  background-image: none;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.disabled:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault[disabled]:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom fieldset[disabled] .btn-myDefault:hover,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.disabled:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault[disabled]:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom fieldset[disabled] .btn-myDefault:focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault.disabled.focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault[disabled].focus,
+.login_main .myLogin .myLogin_right .login_content .login_bottom fieldset[disabled] .btn-myDefault.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.login_main .myLogin .myLogin_right .login_content .login_bottom .btn-myDefault .badge {
+  color: #fff;
+  background-color: #333;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport {
+  border: 1px solid #efefef;
+  padding: 0;
+  margin: 0 14px 10px;
+  width: 300px;
+  height: 94px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport h4 {
+  background: #efefef;
+  margin: 0;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 8px;
+  font-weight: normal;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P {
+  width: 300px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P a {
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid #efefef;
+  display: block;
+  float: left;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 38px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P .icon_qq {
+  background: url(../images/icon_login.png) no-repeat 7px -6px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P .icon_alipay {
+  background: url(../images/icon_login.png) no-repeat 7px -56px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P .icon_weibo {
+  background: url(../images/icon_login.png) no-repeat 7px -195px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P .icon_weixin {
+  background: url(../images/icon_login.png) no-repeat 7px -101px;
+}
+.login_main .myLogin .myLogin_right .login_content .login_surport P .icon_renren {
+  background: url(../images/icon_login.png) no-repeat 7px -145px;
+}
+footer {
+  width: 100%;
+}
+footer .myFooter {
+  padding: 0;
+  padding-top: 20px;
+  text-align: center;
+  width: 980px;
+}
+footer .myFooter a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  padding-right: 5px;
+}
+footer .myFooter a:hover {
+  text-decoration: underline;
+}
+footer .myFooter a + a {
+  border-left: 1px solid #333;
+  padding-left: 5px;
+}
